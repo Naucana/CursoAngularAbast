@@ -1,0 +1,32 @@
+<h1><strong>Demo</strong> Angular</h1>
+
+<div>
+  <p [ngStyle]="{'font-size': tamano}">Esto es un ejemplo de tamano</p>
+  <button type="button" class="btn btn-primary" (click)="tamano = tamano + 5"><i class="fas fa-plus"></i></button>
+  <button type="button" class="btn btn-primary" (click)="tamano = tamano - 5"><i class="fas fa-minus"></i></button>
+</div>
+
+
+<h3>Proceso asincrono</h3>
+<button (click)="ejecutar()" class="btn btn-primary" [disabled]="loading">
+  <i [ngClass]="{'loading': true}"></i>
+
+</button>
+
+<h4>Directiva propia</h4>
+<p appResaltado>Esto es una prueba de directiva</p>
+
+<h4>Botón que redirige a pipe</h4>
+<button (click)="redirect()">Pipe</button>
+
+<app-ng-switch></app-ng-switch>
+
+<app-multiple (salida)="verSalida( $event )" [wololo]="'Esto es otro mensaje input'"></app-multiple>
+<app-multiple (salida)="verOtraSalida( $event )" [wololo]="'Esto es otro mensaje input'"></app-multiple>
+
+<p>{{salida}}</p>
+
+<div #refdiv>
+  <h3 #refh3>Esto es la prueba de viewChild</h3>
+  <h3 #refh3>Esto es otro mensaje en H3</h3>
+</div>

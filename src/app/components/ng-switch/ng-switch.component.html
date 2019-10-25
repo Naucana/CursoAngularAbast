@@ -1,0 +1,11 @@
+<div [ngSwitch]="alerta">
+  <p *ngSwitchCase="mensaje" class="alert alert-primary"> <!-- El mensaje es lo de primario, secundario, terciario bla bla bla -->
+    Estamos en 0
+  </p>
+  <p *ngSwitchCase="1">
+      Estamos en 1
+  </p>
+  <p *ngSwitchCase="2">
+      Estamos en 2
+  </p>
+</div>

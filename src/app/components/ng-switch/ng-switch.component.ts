@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-ng-switch',
+  templateUrl: './ng-switch.component.html',
+  styleUrls: ['./ng-switch.component.css']
+})
+export class NgSwitchComponent implements OnInit {
+
+  alerta: string;
+  mensaje: string[] = [];
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  cambiaVis(){
+    // Aqui hay que cambiar la alerta.
+  }
+}

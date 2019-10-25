@@ -10,6 +10,11 @@ import { RightComponent } from './comun/right/right.component';
 import { FooterComponent } from './comun/footer/footer.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { CapitalizarPipe } from './comun/capitalizar.pipe';
+import { DirectivasComponent } from './components/directivas/directivas.component';
+import { AppResaltadoDirective } from './components/directivas/app-resaltado.directive';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { APP_ROUTING } from './app.routing';
+import { MultipleComponent } from './components/multiple/multiple.component';
 
 registerLocaleData(localeEs);
 
@@ -21,10 +26,15 @@ registerLocaleData(localeEs);
     RightComponent,
     FooterComponent,
     PipesComponent,
-    CapitalizarPipe
+    CapitalizarPipe,
+    DirectivasComponent,
+    AppResaltadoDirective,
+    NgSwitchComponent,
+    MultipleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent]
