@@ -14,8 +14,8 @@ export class DirectivasComponent implements OnInit {
 
   salida: string;
 
-  @ViewChild('refdiv', { static: true }) leoDiv: ElementRef;
-  @ViewChild('refh3', { static: true }) leoHTres: ElementRef;
+  @ViewChild('refdiv', { /*static: true*/ }) leoDiv: ElementRef;
+  @ViewChild('refh3', { /*static: true*/ }) leoHTres: ElementRef;
 
   @ViewChildren('refh3') leoVariosHTres: QueryList<ElementRef>;
 
@@ -35,7 +35,7 @@ export class DirectivasComponent implements OnInit {
     this.procesoEnvio();
   }
 
-  async procesoEnvio(){
+  async procesoEnvio() {
     let envio: number[] = [];
     for (let a = 1; a < 10; a++) {
       envio.push(a);
@@ -43,8 +43,8 @@ export class DirectivasComponent implements OnInit {
     }
   }
 
-  later(funcion, delay){
-    return new Promise(function(funcion) {
+  later(funcion, delay) {
+    return new Promise(function (funcion) {
       setTimeout(funcion, delay);
       console.log('enviando ');
     });

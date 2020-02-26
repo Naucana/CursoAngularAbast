@@ -15,6 +15,6 @@ export class NgSwitchComponent implements OnInit {
   }
 
   cambiaVis(){
-    // Aqui hay que cambiar la alerta.
+    this.alerta = "1";
   }
 }

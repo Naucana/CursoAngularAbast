@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftComponent implements OnInit {
 
+  diasSemana: Array<String> = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+
   constructor() { }
 
   ngOnInit() {
