@@ -17,7 +17,8 @@
 <p appResaltado>Esto es una prueba de directiva</p>
 
 <h4>Botón que redirige a pipe</h4>
-<button (click)="redirect()">Pipe</button>
+<button (click)="nav-link" [routerLink]="[ '/pipe' ]">Pipes</button>
+<!-- <button (click)="redirect()">Pipe</button> -->
 
 <app-ng-switch></app-ng-switch>
 
