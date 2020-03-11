@@ -19,12 +19,6 @@ export class DirectivasComponent implements OnInit {
 
   @ViewChildren('refh3') leoVariosHTres: QueryList<ElementRef>;
 
-  // constructor(private router: Router,
-  //   private activatedRoute: ActivatedRoute) {
-  //   this.activatedRoute.params.subscribe(params => {
-
-  //   })
-  // }
 
   constructor(private conector: AlmacenService) { }
 
@@ -32,7 +26,6 @@ export class DirectivasComponent implements OnInit {
     this.verOtraSalida;
     console.log(this.leoDiv.nativeElement.innerHTML);
     console.log(this.leoHTres.nativeElement.innerHTML);
-    this.procesoEnvio();
   }
 
   async procesoEnvio() {
@@ -60,9 +53,6 @@ export class DirectivasComponent implements OnInit {
     return this.fontSize + 5;
   }
 
-  // redirect() {
-  //   this.router.navigate(['/pipes']);
-  // }
 
   verSalida(mensaje: string) {
     this.salida = mensaje;

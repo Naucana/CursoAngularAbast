@@ -8,7 +8,7 @@
 
 
 <h3>Proceso asincrono</h3>
-<button (click)="ejecutar()" class="btn btn-primary" [disabled]="loading">
+<button (click)="procesoEnvio()" class="btn btn-primary" [disabled]="loading">
   <i [ngClass]="{'loading': true}"></i>
 
 </button>
@@ -18,12 +18,11 @@
 
 <h4>Botón que redirige a pipe</h4>
 <button (click)="nav-link" [routerLink]="[ '/pipe' ]">Pipes</button>
-<!-- <button (click)="redirect()">Pipe</button> -->
 
 <app-ng-switch></app-ng-switch>
 
 <app-multiple (salida)="verSalida( $event )" [wololo]="'Esto es otro mensaje input'"></app-multiple>
-<app-multiple (salida)="verOtraSalida( $event )" [wololo]="'Esto es otro mensaje input'"></app-multiple>
+<app-multiple (salida)="verOtraSalida( $event )" [wololo]="'Esto es otro fucking mensaje input'"></app-multiple>
 
 <p>{{salida}}</p>
 

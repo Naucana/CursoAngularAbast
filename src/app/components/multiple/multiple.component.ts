@@ -4,7 +4,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-multiple',
   template: `
     <p>
-      multiple works! con {{ mensaje }}
+      This is -> {{ mensaje }}
     </p>
   `,
   styles: []
@@ -18,6 +18,6 @@ export class MultipleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.salida.emit("Esto es un mensaje de salida");
+    this.salida.emit("Esto es un mensaje de salida del componente Multiple");
   }
 }
